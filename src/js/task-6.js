@@ -16,8 +16,10 @@ while (true) {
   numbers.push(Number(input));
 }
 
-for (let number of numbers) {
-  total += number;
-}
+if (numbers.length > 0) {
+  for (let number of numbers) {
+    total += number;
+  }
 
-console.log(`Загальна сума чисел дорівнює ${total}`);
+  console.log(`Загальна сума чисел дорівнює ${total}`);
+}
